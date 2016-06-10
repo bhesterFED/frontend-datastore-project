@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="YES" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>Temp</title>
+
+        <!-- CSS - Global and Module Level -->
+        <link rel="stylesheet" href="css/revolving-div.css" type="text/css">
+    </head>
+    <body class="hasTabs">
+        <div id="container">
+            <header id="tabheaders">
+                <ul id="tab-btns">
+                    <li id="tabBtn_1">
+                        <div><span>Tab 1</span></div>
+                    </li>
+                    <li id="tabBtn_2">
+                        <div><span>Tab 2</span></div>
+                    </li>
+                </ul>
+            </header>
+            <section id="tabscontent">
+                <div id="panel_1" class="tabContent">
+                    <article class="left-rail-content">
+                        <div class="content-wrap">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, 
+                                eum pariatur nobis, id magni quibusdam, amet unde repellendus qui 
+                                labore eligendi maxime aperiam. Dolore, omnis quaerat, nobis soluta commodi officia.
+                            </p>
+                        </div>
+                    </article>
+                    
+                    <aside class="right-rail-content">
+                        <!-- Dynamically populated content -->
+                        <h3 class="box-warning-hdr"></h3>
+                        <p class="boxed-warning">
+                            <span class="boxed-warning-text"></span>
+                        </p>
+                        <p class="boxed-warning-instructions"></p>
+                        <p class="boxed-warning-references"></p>
+                        <!-- //Dynamically populated content -->
+                    </aside>
+    
+                </div>
+
+                <div id="panel_2" class="tabContent">
+                    <article class="left-rail-content">
+                        <div class="content-wrap">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, 
+                                eum pariatur nobis, id magni quibusdam, amet unde repellendus qui 
+                                labore eligendi maxime aperiam. Dolore, omnis quaerat, nobis soluta commodi officia.
+                            </p>
+                        </div>
+                    </article>
+                    
+                    <aside class="right-rail-content">
+                        <!-- Dynamically populated content -->
+                        <h3 class="box-warning-hdr"></h3>
+                        <p class="boxed-warning">
+                            <span class="boxed-warning-text"></span>
+                        </p>
+                        <p class="boxed-warning-instructions"></p>
+                        <p class="boxed-warning-references"></p>
+                        <!-- //Dynamically populated content -->
+                    </aside>  
+                </div>
+            </section>
+        </div> <!-- //container -->
+        <!-- Javascript -->
+        <script src="js/tile.js" type="text/javascript" ></script>
+        <script src="js/datastore.v2.js" type="text/javascript" ></script>
+        <script src="js/contentInjection.v4.js" type="text/javascript" ></script>
+
+        <script>
+            function testParams(options) {
+                var item1, item2, item3, item4, item5;
+                item1 = options.item1;
+                item2 = options.item2;
+                item3 = options.item3;
+                item4 = options.item4;
+                item5 = options.item3 + options.item4;
+
+                console.log(item1, item2);
+                console.log(item3);
+                console.log(item4);
+                console.log(item5);
+            }
+
+            testParams({item1 : 'hello', item2 : false, item3 : 878.72, item4 : 2846.71})
+
+
+        </script>
+    
+
+        <!--<script src="js/revolingtabs.js" type="text/javascript"></script>-->
+    </body>
+</html>
